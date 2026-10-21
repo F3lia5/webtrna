@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- DOLDUR: Sayfa başlığı ve açıklaması (SEO) -->
+  <title>Esengül Deniz Photography</title>
+  <meta name="description"
+    content="Bebek, yenidoğan ve aile fotoğrafçılığı. Minik anların en güzel hâllerini ölümsüzleştiriyoruz.">
+
+  <!-- Yazı tipleri: Playfair Display (başlık) + Roboto (metin) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ========== ÜST MENÜ ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <!-- DOLDUR: Logo / stüdyo adı -->
+      <a href="index.html" class="logo">Esengül Deniz Photography</a>
+
+      <!-- Mobil menü butonu (JavaScript'siz çalışır: checkbox hilesi) -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Menüyü aç/kapat">
+      <label for="menu-toggle" class="menu-icon" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="main-nav" aria-label="Ana menü">
+        <ul>
+          <li><a href="index.html">Anasayfa</a></li>
+
+          <li class="has-sub">
+            <a href="hakkimizda.html">Hakkımızda</a>
+            <ul class="sub-menu">
+              <li><a href="hakkimizda.html">Biz Kimiz</a></li>
+              <li><a href="hakkimizda.html#yorumlar">Aile Yorumları</a></li>
+            </ul>
+          </li>
+
+          <li class="has-sub">
+            <a href="portfolyo.html">Portfolyo</a>
+            <ul class="sub-menu">
+              <li><a href="portfolyo.html#yenidogan">Yenidoğan</a></li>
+              <li><a href="portfolyo.html#bebek">Bebek (3-12 Ay)</a></li>
+              <li><a href="portfolyo.html#hamilelik">Hamilelik</a></li>
+              <li><a href="portfolyo.html#aile">Aile</a></li>
+            </ul>
+          </li>
+
+          <li class="has-sub">
+            <a href="hizmetler.html">Hizmetler</a>
+            <ul class="sub-menu">
+              <li><a href="hizmetler.html#yenidogan-cekimi">Yenidoğan Çekimi</a></li>
+              <li><a href="hizmetler.html#bebek-cekimi">Bebek Çekimi</a></li>
+              <li><a href="hizmetler.html#paketler">Paketler ve Fiyatlar</a></li>
+            </ul>
+          </li>
+
+          <li class="has-sub">
+            <a href="iletisim.html">İletişim</a>
+            <ul class="sub-menu">
+              <li><a href="iletisim.html">Randevu Al</a></li>
+              <li><a href="iletisim.html#sss">Sık Sorulan Sorular</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ========== HERO (KARŞILAMA ALANI) ========== -->
+  <main>
+    <section class="hero" id="hero">
+
+      <!-- DOLDUR: Hero fotoğrafı -> images/hero.jpg (koyu tonlu, modelin sağda olduğu bir kare ideal) -->
+      <div class="hero-bg" role="img" aria-label="Bebek fotoğrafçısı kapak görseli"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-content">
+
+          <!-- DOLDUR: Ana başlık -->
+          <h1>Minik Anları<br>Güzel Karelerle<br>Ölümsüzleştiriyoruz</h1>
+
+          <!-- DOLDUR: Kısa açıklama -->
+          <p class="hero-text">
+            Bebeğinizin ilk günlerinin tadını, masum gülüşlerini ve küçük ellerini
+            zarif ve doğal karelerle saklıyoruz.
+          </p>
+
+          <a href="portfolyo.html" class="btn">Portfolyoyu Gör <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!--
+    ===== GELECEK İÇİN YER TUTUCULAR =====
+    Bu bölümler şimdilik boş. İleride içerik ve JavaScript eklenecek.
+    Yorum satırlarını kaldırarak kullanabilirsin.
+  -->
+
+  <!-- <section id="one-cikan-calismalar"> ... galeri / slider (JS) ... </section> -->
+  <!-- <section id="hizmetler-ozet"> ... </section> -->
+  <!-- <section id="yorumlar"> ... yorum kaydırıcı (JS) ... </section> -->
+  <!-- <section id="instagram"> ... </section> -->
+  <!-- <footer class="site-footer"> ... </footer> -->
+
+  <!-- Gelecekte JavaScript buraya eklenecek: -->
+  <!-- <script src="js/main.js"></script> -->
+
+</body>
+
+</html>
