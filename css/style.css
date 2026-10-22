@@ -524,14 +524,14 @@ img {
 
 @keyframes marquee {
   from {
-    transform: translateX(-50%);
-  }
-
-  to {
     transform: translateX(0);
   }
 
-  /* soldan sağa */
+  to {
+    transform: translateX(-50%);
+  }
+
+  /* sağdan sola */
 }
 
 .review-card {
