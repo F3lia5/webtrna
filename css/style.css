@@ -83,6 +83,19 @@ img {
   height: var(--header-h);
 }
 
+/* Menü arkasında koyu gölge: yazılar her fotoğrafta okunsun */
+.site-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 190px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.72) 40%, rgba(0, 0, 0, 0) 100%);
+  pointer-events: none;
+  z-index: -1;
+}
+
 .header-inner {
   height: 100%;
   display: flex;
@@ -91,11 +104,14 @@ img {
 }
 
 .logo {
-  font-family: var(--font-heading);
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: var(--text);
-  letter-spacing: 0.5px;
+  display: block;
+  line-height: 0;
+}
+
+.logo img {
+  height: 54px;
+  /* logo boyutu: buradan ayarla */
+  width: auto;
 }
 
 /* Masaüstü menü */
@@ -115,7 +131,8 @@ img {
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: #d6cfc3;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.9);
   transition: color 0.3s ease;
 }
 
@@ -508,7 +525,7 @@ img {
 .reviews-track {
   display: flex;
   width: max-content;
-  animation: marquee 60s linear infinite;
+  animation: marquee 220s linear infinite;
 }
 
 /* Fare üstüne gelince dursun (okumak için) */
@@ -577,6 +594,10 @@ img {
 }
 
 @media (max-width: 480px) {
+  .logo img {
+    height: 44px;
+  }
+
   .review-card {
     flex-basis: 280px;
     padding: 24px 22px;
