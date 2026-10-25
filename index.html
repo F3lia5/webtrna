@@ -17,7 +17,7 @@
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Roboto:wght@300;400;500&display=swap"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css?v=7">
+  <link rel="stylesheet" href="css/style.css?v=8">
 </head>
 
 <body>
@@ -448,7 +448,97 @@
 
       </div>
     </section>
+    <!-- ========== İLETİŞİM ========== -->
+    <section class="contact" id="iletisim-on">
+      <div class="container">
+
+        <div class="contact-head">
+          <span class="eyebrow reveal">İletişim</span>
+          <h2 class="reveal">Bize Ulaşın</h2>
+          <p class="reveal">Çekim, paket ve randevu için bize yazın; en kısa sürede dönüş yapalım.</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Sol: iletişim bilgileri -->
+          <!-- DOLDUR: Telefon, adres ve e-posta bilgilerini kontrol et. Telefon ve adres internetteki bir rehberden alındı, doğrula. -->
+          <ul class="contact-info reveal">
+            <li>
+              <span class="ci-label">Telefon</span>
+              <a href="tel:+905497110102">0549 711 01 02</a>
+            </li>
+            <li>
+              <span class="ci-label">WhatsApp</span>
+              <a href="https://wa.me/905497110102" target="_blank" rel="noopener">Mesaj Gönder</a>
+            </li>
+            <li>
+              <span class="ci-label">E-posta</span>
+              <a href="mailto:ornek@mail.com">ornek@mail.com</a>
+            </li>
+            <li>
+              <span class="ci-label">Adres</span>
+              <address>Mücahitler, 52009. Cd. No:5/B<br>Şehitkamil / Gaziantep</address>
+            </li>
+            <li>
+              <span class="ci-label">Instagram</span>
+              <a href="https://www.instagram.com/esenguldenizphotography" target="_blank"
+                rel="noopener">@esenguldenizphotography</a>
+            </li>
+          </ul>
+
+          <!-- Sağ: iletişim formu -->
+          <!-- DOLDUR: action="#" kısmına form servisinin adresini yaz (ör. Formspree). Şimdilik form mesajı göndermez. -->
+          <form class="contact-form reveal" action="#" method="post">
+            <div class="field">
+              <label for="ad">Adınız Soyadınız</label>
+              <input type="text" id="ad" name="ad" placeholder="Adınız" required>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="telefon">Telefon</label>
+                <input type="tel" id="telefon" name="telefon" placeholder="05xx xxx xx xx" required>
+              </div>
+              <div class="field">
+                <label for="eposta">E-posta</label>
+                <input type="email" id="eposta" name="eposta" placeholder="ornek@mail.com">
+              </div>
+            </div>
+            <div class="field">
+              <label for="konu">Çekim Türü</label>
+              <select id="konu" name="konu">
+                <option value="">Seçiniz</option>
+                <option>Yenidoğan Çekimi</option>
+                <option>Bebek Çekimi (3-12 Ay)</option>
+                <option>Hamilelik Çekimi</option>
+                <option>Aile Çekimi</option>
+                <option>Diğer</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="mesaj">Mesajınız</label>
+              <textarea id="mesaj" name="mesaj" rows="4"
+                placeholder="Bebeğinizin yaşı, istediğiniz tarih vb."></textarea>
+            </div>
+            <button type="submit" class="btn">Gönder <span class="arrow" aria-hidden="true">→</span></button>
+          </form>
+
+        </div>
+      </div>
+
+      <!-- Google Haritalar (adres değişirse q= kısmını güncelle) -->
+      <div class="contact-map">
+        <iframe title="Stüdyo konumu"
+          src="https://www.google.com/maps?q=Esengül+Deniz+Aile+ve+Bebek+Fotoğraf+Stüdyosu,+Mücahitler,+52009.+Cd.+No:5/B,+Şehitkamil,+Gaziantep&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Esengül Deniz Photography. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
 
   <!--
     ===== GELECEK İÇİN YER TUTUCULAR =====
@@ -460,7 +550,6 @@
   <!-- <section id="hizmetler-ozet"> ... </section> -->
   <!-- <section id="yorumlar"> ... yorum kaydırıcı (JS) ... </section> -->
   <!-- <section id="instagram"> ... </section> -->
-  <!-- <footer class="site-footer"> ... </footer> -->
 
   <!-- Gelecekte JavaScript buraya eklenecek: -->
   <!-- <script src="js/main.js"></script> -->
