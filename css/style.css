@@ -514,8 +514,14 @@ img {
 }
 
 .reviews-marquee {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Her satır ayrı kayar; kenarlarda yumuşak kaybolma */
+.reviews-row {
   overflow: hidden;
-  /* kenarlarda yumuşak kaybolma */
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
   mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
 }
@@ -523,7 +529,12 @@ img {
 .reviews-track {
   display: flex;
   width: max-content;
-  animation: marquee 220s linear infinite;
+  animation: marquee 110s linear infinite;
+}
+
+/* İkinci satır ters yöne kayar */
+.reviews-row--reverse .reviews-track {
+  animation-direction: reverse;
 }
 
 /* Fare üstüne gelince dursun (okumak için) */
@@ -545,8 +556,6 @@ img {
   to {
     transform: translateX(-50%);
   }
-
-  /* sağdan sola */
 }
 
 .review-card {
@@ -592,20 +601,9 @@ img {
   color: #6f6a62;
 }
 
-@media (max-width: 480px) {
-  .review-card {
-    flex-basis: 280px;
-    padding: 24px 22px;
-  }
-
-  .reviews {
-    padding-bottom: 90px;
-  }
-}
-
 /* Hareket istemeyen kullanıcılar: kayma yok, elle kaydırılır */
 @media (prefers-reduced-motion: reduce) {
-  .reviews-marquee {
+  .reviews-row {
     overflow-x: auto;
     -webkit-mask-image: none;
     mask-image: none;
@@ -613,6 +611,55 @@ img {
 
   .reviews-track {
     animation: none;
+  }
+}
+
+/* TELEFON / TABLET: otomatik kayma yok, parmakla kaydırılan tek sıra (20 yorum) */
+@media (max-width: 768px) {
+  .reviews {
+    padding-bottom: 90px;
+  }
+
+  .reviews-marquee {
+    flex-direction: row;
+    gap: 14px;
+    overflow-x: auto;
+    padding: 4px 24px 18px;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 24px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .reviews-marquee::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Satır, şerit ve grup kutuları kalkar; kartlar tek sırada dizilir */
+  .reviews-row,
+  .reviews-track,
+  .reviews-group {
+    display: contents;
+  }
+
+  .reviews-row {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .reviews-track {
+    animation: none;
+  }
+
+  .reviews-group[aria-hidden="true"] {
+    display: none;
+  }
+
+  .review-card {
+    flex: 0 0 84%;
+    max-width: 340px;
+    padding: 24px 22px;
+    scroll-snap-align: start;
   }
 }
 
