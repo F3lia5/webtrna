@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portfolyo | Esengül Deniz Photography</title>
+  <meta name="description" content="Esengül Deniz Photography portfolyo: doğum anı, taburcu, hamilelik, yenidoğan, yaş ve aile çekimlerinden örnekler.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css?v=12">
+</head>
+<body>
+
+  <!-- ========== ÜST MENÜ ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <!-- DOLDUR: Logo / stüdyo adı -->
+      <a href="index.html" class="logo">Esengül Deniz</a>
+
+      <!-- Mobil menü butonu (JavaScript'siz çalışır: checkbox hilesi) -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Menüyü aç/kapat">
+      <label for="menu-toggle" class="menu-icon" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="main-nav" aria-label="Ana menü">
+        <ul>
+          <li><a href="index.html">Anasayfa</a></li>
+
+          <li class="has-sub">
+            <a href="hakkimizda.html">Hakkımızda</a>
+            <ul class="sub-menu">
+              <li><a href="hakkimizda.html">Biz Kimiz</a></li>
+              <li><a href="hakkimizda.html#yorumlar">Aile Yorumları</a></li>
+            </ul>
+          </li>
+
+          <li class="has-sub">
+            <a href="portfolyo.html">Portfolyo</a>
+            <ul class="sub-menu">
+              <li><a href="portfolyo.html#dogum-ani">Doğum Anı</a></li>
+              <li><a href="portfolyo.html#taburcu">Taburcu</a></li>
+              <li><a href="portfolyo.html#hamilelik">Hamilelik</a></li>
+              <li><a href="portfolyo.html#yenidogan">Yenidoğan</a></li>
+              <li><a href="portfolyo.html#yas-cekimi">Yaş Çekimi</a></li>
+              <li><a href="portfolyo.html#aile">Aile</a></li>
+            </ul>
+          </li>
+
+          <li class="has-sub">
+            <a href="hizmetler.html">Hizmetler</a>
+            <ul class="sub-menu">
+              <li><a href="hizmetler.html#yenidogan-cekimi">Yenidoğan Çekimi</a></li>
+              <li><a href="hizmetler.html#bebek-cekimi">Bebek Çekimi</a></li>
+              <li><a href="hizmetler.html#paketler">Paketler ve Fiyatlar</a></li>
+            </ul>
+          </li>
+
+          <li class="has-sub">
+            <a href="iletisim.html">İletişim</a>
+            <ul class="sub-menu">
+              <li><a href="iletisim.html">Randevu Al</a></li>
+              <li><a href="iletisim.html#sss">Sık Sorulan Sorular</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== SAYFA BAŞLIĞI ========== -->
+    <section class="page-hero page-hero--compact">
+      <div class="container">
+        <span class="eyebrow">Esengül Deniz Photography</span>
+        <h1>Portfolyo</h1>
+        <p class="page-lead">Bir çekim türü seçin, fotoğrafı inceleyin; detayları görmek için kartı çevirin.</p>
+      </div>
+    </section>
+
+    <!-- ========== KART GEZGİNİ (JavaScript: js/portfolyo.js) ========== -->
+    <section class="pf" id="portfolyo">
+      <div class="container">
+
+        <div class="pf-stage" aria-label="Portfolyo kart gezgini">
+          <button class="pf-arrow" id="pf-prev" type="button" aria-label="Önceki kart">‹</button>
+
+          <div class="pf-card" id="pf-card">
+            <div class="pf-inner">
+
+              <!-- ÖN YÜZ -->
+              <article class="pf-face pf-front" id="pf-front" role="button" tabindex="0" aria-label="Detayları görmek için kartı çevir">
+                <img id="pf-image" src="images/portfolyo/foto-1.jpg" alt="">
+                <div class="pf-front-content">
+                  <div class="pf-number" id="pf-number">01 / 06</div>
+                  <h2 id="pf-title">Doğum<br>Anı</h2>
+                  <p id="pf-subtitle"></p>
+                  <span class="pf-hint">↻ <span>Detayları görmek için çevir</span></span>
+                </div>
+              </article>
+
+              <!-- ARKA YÜZ -->
+              <article class="pf-face pf-back" id="pf-back">
+                <div class="pf-number" id="pf-back-number">DETAYLAR / 01</div>
+                <h2 id="pf-back-title"></h2>
+                <p id="pf-description"></p>
+                <ul class="pf-features" id="pf-features"></ul>
+                <div class="pf-back-actions">
+                  <a href="hizmetler.html#paketler" class="btn">Paketleri İncele <span class="arrow" aria-hidden="true">→</span></a>
+                  <a href="iletisim.html" class="link-line">Randevu Al</a>
+                </div>
+                <button class="pf-return" id="pf-return" type="button">↻ Ön yüze dön</button>
+              </article>
+
+            </div>
+          </div>
+
+          <button class="pf-arrow" id="pf-next" type="button" aria-label="Sonraki kart">›</button>
+        </div>
+
+        <div class="pf-controls">
+          <div class="pf-dots" id="pf-dots" aria-label="Kart seçimi"></div>
+          <div class="pf-status"><strong id="pf-current">1</strong> / <span id="pf-total">6</span> · <span id="pf-face-status">Ön yüz</span></div>
+        </div>
+        <p class="pf-help">Kartı tıklayarak çevirin · oklarla veya klavyede ← / → ile değiştirin · telefonda sağa sola kaydırın</p>
+
+        <noscript><p class="pf-help">Bu sayfanın çalışması için JavaScript gerekir.</p></noscript>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Esengül Deniz Photography. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="js/portfolyo.js"></script>
+
+</body>
+</html>
