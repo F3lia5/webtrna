@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Hakkımızda | Esengül Deniz Photography</title>
+  <meta name="description" content="Esengül Deniz Photography kimdir? Gaziantep'te bebek, yenidoğan ve aile fotoğraf stüdyosu. Müşteri yorumlarını okuyun.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css?v=11">
+</head>
+<body>
+
+  <!-- ========== ÜST MENÜ ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <!-- DOLDUR: Logo / stüdyo adı -->
+      <a href="index.html" class="logo">Esengül Deniz</a>
+
+      <!-- Mobil menü butonu (JavaScript'siz çalışır: checkbox hilesi) -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Menüyü aç/kapat">
+      <label for="menu-toggle" class="menu-icon" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="main-nav" aria-label="Ana menü">
+        <ul>
+          <li><a href="index.html">Anasayfa</a></li>
+
+          <li class="has-sub">
+            <a href="hakkimizda.html">Hakkımızda</a>
+            <ul class="sub-menu">
+              <li><a href="hakkimizda.html">Biz Kimiz</a></li>
+              <li><a href="hakkimizda.html#yorumlar">Aile Yorumları</a></li>
+            </ul>
+          </li>
+
+          <li class="has-sub">
+            <a href="portfolyo.html">Portfolyo</a>
+            <ul class="sub-menu">
+              <li><a href="portfolyo.html#dogum-ani">Doğum Anı</a></li>
+              <li><a href="portfolyo.html#taburcu">Taburcu</a></li>
+              <li><a href="portfolyo.html#hamilelik">Hamilelik</a></li>
+              <li><a href="portfolyo.html#yenidogan">Yenidoğan</a></li>
+              <li><a href="portfolyo.html#yas-cekimi">Yaş Çekimi</a></li>
+              <li><a href="portfolyo.html#aile">Aile</a></li>
+            </ul>
+          </li>
+
+          <li class="has-sub">
+            <a href="hizmetler.html">Hizmetler</a>
+            <ul class="sub-menu">
+              <li><a href="hizmetler.html#yenidogan-cekimi">Yenidoğan Çekimi</a></li>
+              <li><a href="hizmetler.html#bebek-cekimi">Bebek Çekimi</a></li>
+              <li><a href="hizmetler.html#paketler">Paketler ve Fiyatlar</a></li>
+            </ul>
+          </li>
+
+          <li class="has-sub">
+            <a href="iletisim.html">İletişim</a>
+            <ul class="sub-menu">
+              <li><a href="iletisim.html">Randevu Al</a></li>
+              <li><a href="iletisim.html#sss">Sık Sorulan Sorular</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== SAYFA BAŞLIĞI ========== -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Esengül Deniz Photography</span>
+        <h1>Hakkımızda</h1>
+      </div>
+    </section>
+
+    <!-- ========== BİZ KİMİZ ========== -->
+    <section class="about-story" id="biz-kimiz">
+      <div class="container about-story-grid">
+
+        <!-- DOLDUR: Fotoğrafı images/hakkimizda.jpg olarak kaydet (dikey, 4:5 oranında ideal) -->
+        <div class="about-photo reveal" style="background-image:url('images/hakkimizda.jpg')" role="img" aria-label="Esengül Deniz ve stüdyo"></div>
+
+        <div class="about-text">
+          <!-- DOLDUR: Başlık ve metinleri müşteriden gelen içerikle değiştir -->
+          <span class="eyebrow reveal">Biz Kimiz</span>
+          <h2 class="reveal">Başlık buraya gelecek</h2>
+          <p class="reveal">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <p class="reveal">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <a href="iletisim.html" class="btn reveal">Bize Ulaşın <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== AİLE YORUMLARI ========== -->
+    <section class="reviews-wall" id="yorumlar">
+      <div class="container">
+        <div class="wall-head">
+          <span class="eyebrow reveal">Aile Yorumları</span>
+          <h2 class="reveal">Bizi Tercih Edenler Ne Diyor?</h2>
+        </div>
+
+        <!-- DOLDUR: Yorumları değiştir / ekle. Her yorum bir <article class="review-card"> bloğudur. -->
+        <div class="wall-grid">
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 yıldız">★★★★★</div>
+          <p>“Doğum çekimimiz için tercih etmiştik. Esengül Hanım ve ekibinin ilgisi, sabrı ve güler yüzü harikaydı. Bebeğimize gösterdikleri özen için çok teşekkür ederiz, fotoğraflar mükemmel çıktı!”</p>
+          <footer><strong>A*** Ö***</strong><span>Google Yorumu</span></footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 yıldız">★★★★★</div>
+          <p>“Stüdyonun atmosferi ve hijyeni bebekler için son derece uygun. Çekim sırasında bebeğimiz hiç huzursuz olmadı. Karelerin doğallığına ve kalitesine hayran kaldık.”</p>
+          <footer><strong>M*** K***</strong><span>Google Yorumu</span></footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 yıldız">★★★★★</div>
+          <p>“1 yaş konsept çekimimizi yaptırdık. İlgi ve alakaları çok güzeldi. Aksesuarlar ve konsept seçenekleri oldukça zengin. Kesinlikle tavsiye ederim.”</p>
+          <footer><strong>S*** B***</strong><span>Google Yorumu</span></footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 yıldız">★★★★★</div>
+          <p>“Harika bir çekim deneyimiydi. Fotoğrafların teslim hızı ve baskı kalitesi beklediğimizden de iyi geldi. Emeği geçen herkesin eline sağlık.”</p>
+          <footer><strong>E*** Y*** C***</strong><span>Google Yorumu</span></footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 yıldız">★★★★★</div>
+          <p>“Yenidoğan çekimi için biraz endişeliydik ama ekibin profesyonelliği sayesinde tüm endişelerimiz boşa çıktı. Bebeğimizi rahat ettirmek için ellerinden geleni yaptılar.”</p>
+          <footer><strong>Z*** N*** A***</strong><span>Google Yorumu</span></footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="4 yıldız">★★★★☆</div>
+          <p>“Fotoğraflar ve konseptler harikaydı. Çekim biraz uzun sürdü ama çıkan sonuçlara kesinlikle değdi. Teşekkür ederiz.”</p>
+          <footer><strong>B*** D***</strong><span>Google Yorumu</span></footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 yıldız">★★★★★</div>
+          <p>“Aile çekimi gerçekleştirdik. Ortam çok sıcak ve samimiydi. Çocuklarla iletişimleri harika, hiç zorlanmadan harika fotoğraflar yakaladılar.”</p>
+          <footer><strong>H*** A***</strong><span>Google Yorumu</span></footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 yıldız">★★★★★</div>
+          <p>“Tavsiye üzerine gittik ve çok memnun kaldık. Detaylara verdikleri önem ve çekim sonrası ilgileri takdire şayan. Eline sağlık Esengül Hanım.”</p>
+          <footer><strong>K*** E*** T***</strong><span>Google Yorumu</span></footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 yıldız">★★★★★</div>
+          <p>“Hamilelik çekimimden itibaren tüm özel anlarımızda tercihimiz oldu. Anılarımızı en güzel şekilde ölümsüzleştirdiler, her zaman güler yüzlüler.”</p>
+          <footer><strong>D*** Y***</strong><span>Google Yorumu</span></footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 yıldız">★★★★★</div>
+          <p>“Sıcak ortamı, bebek dostu yaklaşımı ve yaratıcı konseptleriyle bölgedeki en kaliteli stüdyolardan biri. Çok teşekkür ederiz.”</p>
+          <footer><strong>C*** Ö*** K***</strong><span>Google Yorumu</span></footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 yıldız">★★★★★</div>
+          <p>“Bebeğimiz çekim sırasında ağlamasına rağmen büyük bir sabırla ilgilendiler. Çıkan albüm albüm değil adeta bir sanat eseri oldu.”</p>
+          <footer><strong>N*** S***</strong><span>Google Yorumu</span></footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 yıldız">★★★★★</div>
+          <p>“Işık kullanımı, renk paletleri ve kurguları çok başarılı. Kendinizi tamamen rahat hissettiğiniz bir ortam sunuyorlar.”</p>
+          <footer><strong>G*** B*** M***</strong><span>Google Yorumu</span></footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="4 yıldız">★★★★☆</div>
+          <p>“Genel olarak çok memnun kaldık, fotoğrafların kalitesi ve renk canlılığı harika. Randevu yoğunluğu biraz fazlaydı ama değdi.”</p>
+          <footer><strong>İ*** K***</strong><span>Google Yorumu</span></footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 yıldız">★★★★★</div>
+          <p>“Oğlumuzun ilk yaş gününü ölümsüzleştirmek için doğru adrestik. Güler yüzlü hizmetiniz ve ilginiz için ailece çok teşekkür ederiz.”</p>
+          <footer><strong>Ö*** F*** Ş***</strong><span>Google Yorumu</span></footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 yıldız">★★★★★</div>
+          <p>“Stüdyo tertemiz ve bebekler için ısıtması çok iyi ayarlanmıştı. Kostümler ve konseptler çok hijyenikti. Gönül rahatlığıyla tercih edebilirsiniz.”</p>
+          <footer><strong>F*** N*** E***</strong><span>Google Yorumu</span></footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 yıldız">★★★★★</div>
+          <p>“Bebek çekiminde sabır her şeydir ve bu stüdyoda sabır ile profesyonellik birleşmiş. Sonuçtan çok memnun kaldık.”</p>
+          <footer><strong>T*** Y***</strong><span>Google Yorumu</span></footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 yıldız">★★★★★</div>
+          <p>“Her anından keyif aldığımız bir çekim süreciydi. Albümümüz elime ulaştığında kalitesine bir kez daha hayran kaldım.”</p>
+          <footer><strong>Y*** K*** A***</strong><span>Google Yorumu</span></footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 yıldız">★★★★★</div>
+          <p>“Poz verdirmekte hiç zorlanmadık, bizi çok iyi yönlendirdiler. Fotoğrafların doğallığı harika. Emeğinize sağlık.”</p>
+          <footer><strong>E*** G***</strong><span>Google Yorumu</span></footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 yıldız">★★★★★</div>
+          <p>“Daha önce de farklı bir stüdyoda çekim yaptırmıştık ama buradaki ilgi ve kalite kıyaslanamaz bile. Çok teşekkürler.”</p>
+          <footer><strong>S*** T*** U***</strong><span>Google Yorumu</span></footer>
+        </article>
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 yıldız">★★★★★</div>
+          <p>“Tüm sürecin başından albüm teslimine kadar her şey mükemmel ilerledi. Anılarımızı bu kadar güzel ölümsüzleştirdiğiniz için teşekkür ederiz.”</p>
+          <footer><strong>R*** A***</strong><span>Google Yorumu</span></footer>
+        </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+
+  <!-- Gelecekte JavaScript buraya eklenecek: -->
+  <!-- <script src="js/main.js"></script> -->
+
+</body>
+</html>
