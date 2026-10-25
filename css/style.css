@@ -104,14 +104,12 @@ img {
 }
 
 .logo {
-  display: block;
-  line-height: 0;
-}
-
-.logo img {
-  height: 54px;
-  /* logo boyutu: buradan ayarla */
-  width: auto;
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--text);
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.9);
 }
 
 /* Masaüstü menü */
@@ -500,7 +498,7 @@ img {
    ========================================================= */
 .reviews {
   background: #000;
-  padding: 0 0 120px;
+  padding: 0 0 110px;
   text-align: center;
 }
 
@@ -584,6 +582,7 @@ img {
   color: var(--text);
   font-weight: 500;
   font-size: 0.9rem;
+  letter-spacing: 1px;
 }
 
 .review-card span {
@@ -594,10 +593,6 @@ img {
 }
 
 @media (max-width: 480px) {
-  .logo img {
-    height: 44px;
-  }
-
   .review-card {
     flex-basis: 280px;
     padding: 24px 22px;
@@ -618,6 +613,95 @@ img {
 
   .reviews-track {
     animation: none;
+  }
+}
+
+/* =========================================================
+   PORTFOLYO ÖN GÖSTERİM
+   ========================================================= */
+.portfolio-preview {
+  background: #000;
+  padding: 0 0 130px;
+  text-align: center;
+}
+
+.portfolio-head {
+  margin-bottom: 50px;
+}
+
+.portfolio-preview h2 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  color: var(--text);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.portfolio-item {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background-color: #111;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #1a1a1a;
+  transition: transform 0.5s ease, border-color 0.4s ease;
+}
+
+.portfolio-item::before {
+  /* altta koyu geçiş: yazı okunsun */
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 55%);
+  transition: opacity 0.4s ease;
+}
+
+.portfolio-caption {
+  position: absolute;
+  left: 24px;
+  bottom: 22px;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--text);
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.9);
+}
+
+.portfolio-item:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent);
+}
+
+.portfolio-more {
+  margin-top: 56px;
+}
+
+@media (max-width: 960px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-preview {
+    padding-bottom: 90px;
+  }
+
+  .portfolio-grid {
+    gap: 10px;
+  }
+
+  .portfolio-caption {
+    left: 14px;
+    bottom: 14px;
+    font-size: 1rem;
   }
 }
 
