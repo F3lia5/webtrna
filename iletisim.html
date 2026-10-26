@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Randevu Al | Esengül Deniz Photography</title>
+  <meta name="description" content="Esengül Deniz Photography ile randevu alın. Gaziantep Şehitkamil'de bebek, yenidoğan, hamilelik ve aile fotoğraf çekimi için bize ulaşın.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css?v=15">
+</head>
+<body>
+
+  <!-- ========== ÜST MENÜ ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <!-- DOLDUR: Logo / stüdyo adı -->
+      <a href="index.html" class="logo">Esengül Deniz</a>
+
+      <!-- Mobil menü butonu (JavaScript'siz çalışır: checkbox hilesi) -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Menüyü aç/kapat">
+      <label for="menu-toggle" class="menu-icon" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="main-nav" aria-label="Ana menü">
+        <ul>
+          <li><a href="index.html">Anasayfa</a></li>
+
+          <li class="has-sub">
+            <a href="hakkimizda.html">Hakkımızda</a>
+            <ul class="sub-menu">
+              <li><a href="hakkimizda.html">Biz Kimiz</a></li>
+              <li><a href="hakkimizda.html#yorumlar">Aile Yorumları</a></li>
+            </ul>
+          </li>
+
+          <li class="has-sub">
+            <a href="portfolyo.html">Portfolyo</a>
+            <ul class="sub-menu">
+              <li><a href="portfolyo.html#dogum-ani">Doğum Anı</a></li>
+              <li><a href="portfolyo.html#taburcu">Taburcu</a></li>
+              <li><a href="portfolyo.html#hamilelik">Hamilelik</a></li>
+              <li><a href="portfolyo.html#yenidogan">Yenidoğan</a></li>
+              <li><a href="portfolyo.html#yas-cekimi">Yaş Çekimi</a></li>
+              <li><a href="portfolyo.html#aile">Aile</a></li>
+            </ul>
+          </li>
+
+          <li class="has-sub">
+            <a href="hizmetler.html">Hizmetler</a>
+            <ul class="sub-menu">
+              <li><a href="hizmetler.html#cekimler">Çekim Türleri</a></li>
+              <li><a href="hizmetler.html#paketler">Paketler ve Fiyatlar</a></li>
+              <li><a href="hizmetler.html#surec">Nasıl Çalışıyoruz</a></li>
+            </ul>
+          </li>
+
+          <li class="has-sub">
+            <a href="iletisim.html">İletişim</a>
+            <ul class="sub-menu">
+              <li><a href="iletisim.html">Randevu Al</a></li>
+              <li><a href="iletisim.html#sss">Sık Sorulan Sorular</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== SAYFA BAŞLIĞI ========== -->
+    <section class="page-hero page-hero--compact">
+      <div class="container">
+        <span class="eyebrow">Esengül Deniz Photography</span>
+        <h1>Randevu Al</h1>
+        <p class="page-lead">Formu doldurun, en kısa sürede sizinle iletişime geçelim.</p>
+      </div>
+    </section>
+
+    <!-- ========== RANDEVU FORMU + İLETİŞİM BİLGİLERİ ========== -->
+    <section class="contact appt" id="randevu">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- DOLDUR: Telefon, adres ve e-posta bilgilerini kontrol et -->
+          <ul class="contact-info reveal">
+            <li>
+              <span class="ci-label">Telefon</span>
+              <a href="tel:+905497110102">0549 711 01 02</a>
+            </li>
+            <li>
+              <span class="ci-label">WhatsApp</span>
+              <a href="https://wa.me/905497110102" target="_blank" rel="noopener">Hemen Mesaj Gönder</a>
+            </li>
+            <li>
+              <span class="ci-label">E-posta</span>
+              <a href="mailto:esengulphotography@gmail.com">esengulphotography@gmail.com</a>
+            </li>
+            <li>
+              <span class="ci-label">Adres</span>
+              <address>Mücahitler, 52009. Cd. No:5/B<br>Şehitkamil / Gaziantep</address>
+            </li>
+            <li>
+              <span class="ci-label">Çalışma Saatleri</span>
+              <!-- DOLDUR: Çalışma saatlerini yaz -->
+              <address>Hafta içi: ... – ...<br>Cumartesi: ... – ...</address>
+            </li>
+            <li>
+              <span class="ci-label">Instagram</span>
+              <a href="https://www.instagram.com/esenguldenizphotography" target="_blank" rel="noopener">@esenguldenizphotography</a>
+            </li>
+          </ul>
+
+          <!-- DOLDUR: action="#" yerine form servisinin adresini yaz (ör. Formspree). Şimdilik form mesaj göndermez. -->
+          <form class="contact-form reveal" action="#" method="post">
+            <div class="field">
+              <label for="r-ad">Adınız Soyadınız</label>
+              <input type="text" id="r-ad" name="ad" placeholder="Adınız" autocomplete="name" required>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="r-tel">Telefon</label>
+                <input type="tel" id="r-tel" name="telefon" placeholder="05xx xxx xx xx" autocomplete="tel" required>
+              </div>
+              <div class="field">
+                <label for="r-mail">E-posta</label>
+                <input type="email" id="r-mail" name="eposta" placeholder="ornek@mail.com" autocomplete="email">
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="r-tur">Çekim Türü</label>
+                <select id="r-tur" name="cekim_turu" required>
+                  <option value="">Seçiniz</option>
+                <option>Doğum Anı</option>
+                <option>Taburcu</option>
+                <option>Hamilelik</option>
+                <option>Yenidoğan</option>
+                <option>Yaş Çekimi</option>
+                <option>Aile</option>
+                <option>Diğer / Emin değilim</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="r-tarih">Tercih Ettiğiniz Tarih</label>
+                <input type="date" id="r-tarih" name="tarih">
+              </div>
+            </div>
+            <div class="field">
+              <label for="r-yas">Bebeğin Yaşı / Tahmini Doğum Tarihi</label>
+              <input type="text" id="r-yas" name="bebek_yasi" placeholder="Örn. 12 günlük, 6 aylık, doğuma 3 hafta var">
+            </div>
+            <div class="field">
+              <label for="r-mesaj">Mesajınız</label>
+              <textarea id="r-mesaj" name="mesaj" rows="4" placeholder="Eklemek istedikleriniz, konsept istekleriniz vb."></textarea>
+            </div>
+
+            <label class="check">
+              <input type="checkbox" name="kvkk" required>
+              <!-- DOLDUR: KVKK aydınlatma metni sayfası hazır olunca "aydınlatma metnini" kısmını bağlantı yap -->
+              <span>Kişisel verilerimin randevu talebim kapsamında işlenmesini ve aydınlatma metnini okuduğumu kabul ediyorum.</span>
+            </label>
+
+            <button type="submit" class="btn">Randevu Talebi Gönder <span class="arrow" aria-hidden="true">→</span></button>
+          </form>
+
+        </div>
+      </div>
+
+      <!-- Google Haritalar -->
+      <div class="contact-map">
+        <iframe
+          title="Stüdyo konumu"
+          src="https://www.google.com/maps?q=Esengül+Deniz+Aile+ve+Bebek+Fotoğraf+Stüdyosu,+Mücahitler,+52009.+Cd.+No:5/B,+Şehitkamil,+Gaziantep&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- ========== SIK SORULAN SORULAR ========== -->
+    <section class="faq" id="sss">
+      <div class="container faq-inner">
+        <div class="sec-head">
+          <span class="eyebrow reveal">Sık Sorulan Sorular</span>
+          <h2 class="reveal">Aklınıza Takılanlar</h2>
+        </div>
+        <!-- DOLDUR: Soruları ve cevapları kendi bilgilerinle değiştir. Her biri bir <details> bloğudur. -->
+        <div class="faq-list">
+        <details class="faq-item reveal">
+          <summary>Çekime hangi dönemde gelmeliyim?</summary>
+          <p>Örnek cevap: Yenidoğan çekimleri için en uygun dönem ilk haftalardır. Kendi önerilerini buraya yaz.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Çekim ne kadar sürer?</summary>
+          <p>Örnek cevap: Çekim süresi paketine ve bebeğin ihtiyaçlarına göre değişir. Kendi cevabını buraya yaz.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Çekime yanımda neler getirmeliyim?</summary>
+          <p>Örnek cevap: Bebeğin bezi, mamasını ve yedek kıyafetini getirmenizi öneririz. Kendi listeni buraya yaz.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Fotoğraflar ne zaman teslim edilir?</summary>
+          <p>Örnek cevap: Seçim ve düzenleme sonrası belirli bir sürede teslim edilir. Kendi süreni buraya yaz.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Randevumu değiştirebilir veya iptal edebilir miyim?</summary>
+          <p>Örnek cevap: Randevu değişikliği için önceden haber vermenizi rica ederiz. Kendi politikanı buraya yaz.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Ödeme nasıl yapılır?</summary>
+          <p>Örnek cevap: Ödeme ve kapora bilgileri randevu sırasında paylaşılır. Kendi cevabını buraya yaz.</p>
+        </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Esengül Deniz Photography. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <!-- Gelecekte JavaScript buraya eklenecek: -->
+  <!-- <script src="js/main.js"></script> -->
+
+</body>
+</html>

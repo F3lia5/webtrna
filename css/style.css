@@ -1166,6 +1166,77 @@ img { max-width: 100%; display: block; }
 }
 
 /* =========================================================
+   RANDEVU / İLETİŞİM SAYFASI
+   ========================================================= */
+.appt { padding-top: 20px; }
+.appt .contact-grid { padding-bottom: 90px; }
+
+.field input[type="date"] { color-scheme: dark; min-height: 49px; }
+.field select { color-scheme: dark; }
+
+/* KVKK onay kutusu */
+.check {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 6px 0 28px;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.check input {
+  flex: 0 0 18px;
+  width: 18px; height: 18px;
+  margin-top: 2px;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+/* Sık sorulan sorular (JavaScript'siz açılır/kapanır) */
+.faq { background: #000; padding: 100px 0 130px; }
+.faq-inner { max-width: 780px; }
+
+.faq-item { border-bottom: 1px solid #1c1c1c; }
+.faq-item:first-child { border-top: 1px solid #1c1c1c; }
+
+.faq-item summary {
+  position: relative;
+  list-style: none;
+  padding: 24px 40px 24px 0;
+  cursor: pointer;
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  color: var(--text);
+  transition: color 0.3s ease;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary:hover { color: var(--accent-hover); }
+.faq-item summary:focus-visible { outline: 2px solid var(--accent-hover); outline-offset: 2px; }
+
+.faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 6px; top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-body);
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--accent);
+  transition: transform 0.3s ease;
+}
+.faq-item[open] summary::after { content: "–"; }
+
+.faq-item p { padding: 0 40px 26px 0; line-height: 1.85; }
+
+@media (max-width: 600px) {
+  .faq { padding: 70px 0 90px; }
+  .faq-item summary { font-size: 1.05rem; }
+  .appt .contact-grid { padding-bottom: 60px; }
+}
+
+/* =========================================================
    GELECEKTE EKLENECEK BÖLÜMLER İÇİN YER
    (galeri, hizmetler, yorumlar, footer stilleri buraya)
    ========================================================= */
